@@ -8,11 +8,7 @@
 import UIKit
 
 class PersonsListTableViewController: UITableViewController {
-    var personList = Person.getPerson()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    var personList: [Person] = []
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,7 +17,6 @@ class PersonsListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personInfo", for: indexPath)
-
         let person = personList[indexPath.row]
         
         var content = cell.defaultContentConfiguration()

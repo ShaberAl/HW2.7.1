@@ -17,17 +17,30 @@ struct Person {
 }
 
 extension Person {
-    static func getPerson() -> [Person] {
-        let deletedValue = DataManager()
+    static func getPersonsList() -> [Person] {
         var listOfPersons = [Person]()
+
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let phoneNumbers = DataManager.shared.phoneNumbers.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
         
-        while !deletedValue.names.isEmpty {
-            listOfPersons.insert(Person(name: deletedValue.names.remove(at: Int.random(in: 0...deletedValue.names.count - 1)),
-                                        surname: deletedValue.surnames.remove(at: Int.random(in: 0...deletedValue.surnames.count - 1)),
-                                        phoneNumber: deletedValue.phoneNumbers.remove(at: Int.random(in: 0...deletedValue.phoneNumbers.count - 1)),
-                                        email: deletedValue.emails.remove(at: Int.random(in: 0...deletedValue.emails.count - 1))), at: 0)
+        let iterationCount = min(names.count, surnames.count, phoneNumbers.count, emails.count) - 1
+        
+        for index in 0...iterationCount {
+            let person = Person(name: names[index],
+                                surname: surnames[index],
+                                phoneNumber: phoneNumbers[index],
+                                email: emails[index])
+            
+            listOfPersons.append(person)
         }
         
         return listOfPersons
     }
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }
