@@ -13,10 +13,11 @@
 		2236A04B2808349200F54EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2236A04A2808349200F54EFD /* Assets.xcassets */; };
 		2236A04E2808349200F54EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2236A04C2808349200F54EFD /* LaunchScreen.storyboard */; };
 		2236A05B280837B300F54EFD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A05A280837B300F54EFD /* Person.swift */; };
-		2236A05D280838D600F54EFD /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A05C280838D600F54EFD /* PersonsListViewController.swift */; };
+		2236A05D280838D600F54EFD /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A05C280838D600F54EFD /* PersonsListTableViewController.swift */; };
 		2236A05F2808390C00F54EFD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A05E2808390C00F54EFD /* DetailsViewController.swift */; };
 		2236A06128083BEA00F54EFD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A06028083BEA00F54EFD /* DataManager.swift */; };
 		2236A063280840A800F54EFD /* ListOfPersonsBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A062280840A800F54EFD /* ListOfPersonsBarController.swift */; };
+		2236A0652808606800F54EFD /* PersonsListSecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236A0642808606800F54EFD /* PersonsListSecondTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		2236A04D2808349200F54EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2236A04F2808349200F54EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2236A05A280837B300F54EFD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		2236A05C280838D600F54EFD /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		2236A05C280838D600F54EFD /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
 		2236A05E2808390C00F54EFD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		2236A06028083BEA00F54EFD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2236A062280840A800F54EFD /* ListOfPersonsBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPersonsBarController.swift; sourceTree = "<group>"; };
+		2236A0642808606800F54EFD /* PersonsListSecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListSecondTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				2236A062280840A800F54EFD /* ListOfPersonsBarController.swift */,
-				2236A05C280838D600F54EFD /* PersonsListViewController.swift */,
+				2236A05C280838D600F54EFD /* PersonsListTableViewController.swift */,
 				2236A05E2808390C00F54EFD /* DetailsViewController.swift */,
+				2236A0642808606800F54EFD /* PersonsListSecondTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,8 +197,9 @@
 				2236A0422808349000F54EFD /* AppDelegate.swift in Sources */,
 				2236A063280840A800F54EFD /* ListOfPersonsBarController.swift in Sources */,
 				2236A0442808349000F54EFD /* SceneDelegate.swift in Sources */,
-				2236A05D280838D600F54EFD /* PersonsListViewController.swift in Sources */,
+				2236A05D280838D600F54EFD /* PersonsListTableViewController.swift in Sources */,
 				2236A06128083BEA00F54EFD /* DataManager.swift in Sources */,
+				2236A0652808606800F54EFD /* PersonsListSecondTableViewController.swift in Sources */,
 				2236A05F2808390C00F54EFD /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,13 +24,14 @@
             </objects>
             <point key="canvasLocation" x="-535" y="106"/>
         </scene>
-        <!--List Of Persons Bar Controller-->
+        <!--Persons List-->
         <scene sceneID="HrD-cS-pC9">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="25l-cP-SuJ" customClass="ListOfPersonsBarController" customModule="HW2_7_1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="lCK-Jm-ATW"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="lCK-Jm-ATW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YAc-tT-OWe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -43,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="355.07246376811599" y="105.80357142857143"/>
         </scene>
-        <!--Persons List-->
+        <!--Contacts-->
         <scene sceneID="bME-Q2-3dk">
             <objects>
-                <tableViewController id="8rc-8e-i4S" customClass="PersonsListViewController" customModule="HW2_7_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8rc-8e-i4S" customClass="PersonsListTableViewController" customModule="HW2_7_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hAX-g3-TiX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +71,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="l8H-Xf-myc"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="Qkz-DL-AN5"/>
+                    <navigationItem key="navigationItem" id="Qkz-DL-AN5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3U6-u3-OBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,17 +86,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-We-HMY">
-                                <rect key="frame" x="20" y="160" width="374" height="78"/>
+                                <rect key="frame" x="20" y="160" width="374" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-KD-OSA">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSn-Tc-K7P">
-                                        <rect key="frame" x="0.0" y="49" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <rect key="frame" x="0.0" y="44" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -111,15 +112,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a9c-As-mnh"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="fSn-Tc-K7P" id="MiH-nZ-j2q"/>
+                        <outlet property="phoneNumberLabel" destination="TlC-KD-OSA" id="4LA-OT-Ofw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87x-fJ-EOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2165" y="-95"/>
         </scene>
-        <!--Persons List-->
+        <!--Contacts-->
         <scene sceneID="5cQ-3Q-PoN">
             <objects>
-                <tableViewController id="YbQ-bR-K2M" sceneMemberID="viewController">
+                <tableViewController id="YbQ-bR-K2M" customClass="PersonsListSecondTableViewController" customModule="HW2_7_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bRf-ct-h20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +145,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="emt-fF-jZk"/>
-                    <navigationItem key="navigationItem" title="Persons List" id="iHf-cw-hAf"/>
+                    <navigationItem key="navigationItem" id="iHf-cw-hAf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlr-EG-Je8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,11 +8,21 @@
 import UIKit
 
 class ListOfPersonsBarController: UITabBarController {
-    private var personsList = Person.getPerson()
+//    private var personsList = Person.getPerson()
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//    }
     
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let personsListVC = segue.destination as? UITableViewController else { return }
-        
-    }
+//    // MARK: - Navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let tableVC = segue.destination as? UITableViewController else { return }
+//
+//        if let firstTVC = tableVC as? PersonsListTableViewController {
+//            firstTVC.personList = personsList
+//        } else if let secondTVC = tableVC as? PersonsListSecondTableViewController {
+//            secondTVC.person = personsList
+//        }
+//    }
 }
